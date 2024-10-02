@@ -30,3 +30,24 @@
 *.exe
 *.out
 *.app
+
+# Documentation
+*.pdf
+
+# Vitual Studio
+.ilk
+.pdb
+.vs/
+
+# VS Code
+.vscode/
+
+# Images
+.png
+
+gtest_exercise/
+O_*/
+
+assign1/assign1/
+assign2/sample/
+.profile
