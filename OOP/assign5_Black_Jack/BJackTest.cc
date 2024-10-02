@@ -63,13 +63,14 @@ int main(int argc, char** argv) {
 
     if (argc == 3) {
         seed = atoi(argv[1]);        // the first argument is the seed
-        ndecks = atoi(argv[2]);        // the second argument is the number of decks
+        ndecks =
+            atoi(argv[2]);        // the second argument is the number of decks
     } else if (argc == 2) {
         if (argv[1][1] == 'h') {        // check the first argument is "-h"
             PrintUsage(argv[0]);
             exit(-1);
-        } 
-        else  seed = atoi(argv[1]);        // the first argument is the seed
+        } else
+            seed = atoi(argv[1]);        // the first argument is the seed
     } else if (argc > 3) {
         PrintUsage(argv[0]);
         exit(-1);
@@ -84,7 +85,8 @@ int main(int argc, char** argv) {
     BJackGame bjgame(bjplayer, bjdealer);
 
     // play the game until the user quit
-    while (bjgame.oneRun());
+    while (bjgame.oneRun())
+        ;
 
     PrintMyID("110703013");
     return 0;
